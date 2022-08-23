@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scene/DuckSpawnPoint.gd" type="Script" id=1]
+[ext_resource path="res://image/duck_nest.png" type="Texture" id=2]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="DuckSpawnPoint" type="Position2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_gizmo_extents_": 0.0
+}
+
+[node name="DuckSpawnCD" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="DuckNest" type="AnimatedSprite" parent="."]
+z_as_relative = false
+frames = SubResource( 1 )
+
+[connection signal="timeout" from="DuckSpawnCD" to="." method="_on_DuckSpawnCD_timeout"]
