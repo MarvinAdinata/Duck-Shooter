@@ -20,6 +20,10 @@ func _ready():
 
 func _on_DuckSpawnCD_timeout():
 	var duck = _duck.instance()
-	add_child(duck)
+	#add_child(duck)
+	get_parent().add_child(duck)
+	duck.global_position.x = position.x
+	duck.global_position.y = position.y
+	
 	
 	pass # Replace with function body.

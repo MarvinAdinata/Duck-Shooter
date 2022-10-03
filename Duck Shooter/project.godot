@@ -22,8 +22,13 @@ _global_script_class_icons={
 
 config/name="Duck Shooter"
 config/description="finish this u dum dum"
-run/main_scene="res://scene/Main.tscn"
+run/main_scene="res://scene/MainMenu.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
 
 [editor]
 
@@ -34,6 +39,10 @@ version_control_plugin_name="GitAPI"
 [gdnative]
 
 singletons=[ "res://addons/godot-git-plugin/git_api.gdnlib" ]
+
+[global]
+
+scene=false
 
 [gui]
 

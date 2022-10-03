@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/y2mate.com - Harvest Moon Back to Nature  Title  OST.mp3-cb6fd01d1b485cbc93a6e2af6830143c.mp3str"
+
+[deps]
+
+source_file="res://sound/y2mate.com - Harvest Moon Back to Nature  Title  OST.mp3"
+dest_files=[ "res://.import/y2mate.com - Harvest Moon Back to Nature  Title  OST.mp3-cb6fd01d1b485cbc93a6e2af6830143c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

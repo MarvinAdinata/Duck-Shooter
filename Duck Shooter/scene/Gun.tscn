@@ -32,6 +32,7 @@ wait_time = 0.05
 
 [node name="ShotSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+volume_db = -10.0
 
 [connection signal="timeout" from="GunLingerTime" to="." method="_on_GunLingerTime_timeout"]
 [connection signal="finished" from="ShotSound" to="." method="_on_ShotSound_finished"]

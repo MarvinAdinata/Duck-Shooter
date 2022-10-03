@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scene/BackgroundMusic.gd" type="Script" id=1]
+[ext_resource path="res://sound/y2mate.com - Harvest Moon Back to Nature  Title  OST.mp3" type="AudioStream" id=2]
 
 [node name="BackgroundMusic" type="AudioStreamPlayer"]
+stream = ExtResource( 2 )
 script = ExtResource( 1 )

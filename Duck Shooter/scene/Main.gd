@@ -45,7 +45,7 @@ func _ready():
 func _unhandled_input(event):
 	if event is InputEventKey and event.is_pressed():
 		if event.scancode == KEY_ESCAPE:
-			get_tree().quit()
+			get_tree().change_scene("res://scene/MainMenu.tscn")
 	
 	
 
